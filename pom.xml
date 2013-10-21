@@ -11,6 +11,10 @@
     <name>Bart Prokop Java Library</name>
     <url>https://github.com/bartprokop/bartlib</url>
     <description>Bart Library</description>
+    
+    <scm>
+        <url>https://github.com/bartprokop/commons</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,6 +25,7 @@
             <name>Bartłomiej Prokop</name>
             <email>prokop.bart@gmail.com</email>
             <timezone>+1</timezone>
+            <url>http://bart.prokop.name/</url>
         </developer>
     </developers>
 
