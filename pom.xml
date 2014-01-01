@@ -41,6 +41,21 @@
         </site>
     </distributionManagement>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>bintray</name>
+            <url>http://jcenter.bintray.com</url>        
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>bintray</name>
+            <url>http://jcenter.bintray.com</url>
+        </repository>
+    </repositories>
+
     <build>
         <extensions>
             <extension>
@@ -82,6 +97,21 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <reportPlugins>
+                        <plugin>
+                            <artifactId>maven-javadoc-plugin</artifactId>
+                            <version>2.8.1</version>
+                        </plugin>
+                        <plugin>
+                            <artifactId>maven-project-info-reports-plugin</artifactId>                            
+                        </plugin>                     
+                    </reportPlugins>
+                </configuration>
             </plugin>
         </plugins>
     </build>
